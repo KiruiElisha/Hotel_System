@@ -1,0 +1,43 @@
+{% include "header.html" %}
+<marquee><h2>HELLO!!   Welcome To Our Hotel. It will Be Our Pleasure To Serve You </h2></marquee>
+
+<h1 class="jumbotron text-center">Registration of customers</h1>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Enter details below</h2>
+                <form action="/" method="post" ><br><br>
+                    <label><h5>IdNumber:</h5></label> <input type="number" name="idNumber" placeholder="Enter your IdNumber"><br>
+                    <label><h5>Username:</h5></label> <input type="text" name="username" placeholder="Enter your Username"><br>
+                    <label><h5>Password:</h5></label> <input type="password" name="password" placeholder="Enter your password"> <br>
+                    <label><h5>Email:</h5></label> <input type="email" name="email" placeholder="Enter your email address"><br>
+                    <label><h5>Phone:</h5></label> <input type="tel" name="phone" placeholder="Enter your phone number"> <br>
+                    <label><h5>Location:</h5></label> <input type="text" name="location" placeholder="Enter your location"> <br><br>
+
+                    <input type="submit" value="Submit" class="btn btn-primary"><br><br>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card bg-warning">
+            <div class="card-body">
+                <h2 class="card-title">Registration status</h2>
+                <div class="alert alert-info">
+                    {{ msg }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+{% include "footer.html" %}

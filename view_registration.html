@@ -1,0 +1,45 @@
+{% include "header.html" %}
+<marquee><h2>HELLO!!   Welcome To Our Hotel. It will Be Our Pleasure To Serve You </h2></marquee>
+
+<br>
+<h1>List of People who Registered</h1>
+<hr>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Idnumber</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for row in rows %}
+            <tr>
+                <th scope="row">{{ row[0] }}</th>
+                <td scope="row">{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+
+
+
+            </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+{% include "footer.html" %}

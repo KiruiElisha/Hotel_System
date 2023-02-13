@@ -1,0 +1,55 @@
+{% include "header.html" %}
+<marquee><h2>HELLO!!   Welcome To Our Hotel. It will Be Our Pleasure To Serve You </h2></marquee>
+
+<br>
+<h1>List of checked visitors and their details</h1>
+<hr>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">email</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">nationality</th>
+                    <th scope="col">address</th>
+                    <th scope="col">checkin_date</th>
+                    <th scope="col">checkin_time</th>
+                    <th scope="col">roomno</th>
+                    <th scope="col">checkout_date</th>
+                    <th scope="col">checkout_time</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+            {% for row in rows %}
+            <tr>
+                <th scope="row">{{ row[0] }}</th>
+                <td scope="row">{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+                <td>{{ row[7] }}</td>
+                <td>{{ row[8] }}</td>
+                <td>{{ row[9] }}</td>
+
+
+            </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+{% include "footer.html" %}

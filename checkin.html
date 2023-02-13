@@ -1,0 +1,48 @@
+{% include "header.html" %}
+
+<marquee><h2>HELLO!!   Welcome To Our Hotel. It will Be Our Pleasure To Serve You </h2></marquee>
+
+<h1 class="jumbotron text-center">Check in Visitors</h1>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Enter details below</h2>
+                <form action="/checkin" method="post"><br><br>
+                    <label><h5>Fullname:</h5></label> <input type="text" name="fname" placeholder="Enter your full names"><br>
+                    <label><h5>Email:</h5></label> <input type="email" name="email" placeholder="Enter your email address"><br>
+                    <label><h5>Phone:</h5></label> <input type="tel" name="phone" placeholder="Enter your phone number"> <br>
+                    <label><h5>Nationality:</h5></label> <input type="text" name="nationality" placeholder="Enter your nationality"><br>
+                    <label><h5>Address:</h5></label> <input type="text" name="address" placeholder="Enter your Address"><br>
+                    <label><h5>Checkin_date:</h5></label> <input type="date" name="checkin_date" placeholder="Enter your Checkin_date"><br>
+                    <label><h5>Checkin_time:</h5></label> <input type="time" name="checkin_time" placeholder="Enter your Checkin_time"><br>
+                    <label><h5>Roomno:</h5></label> <input type="number" name="room_no" placeholder="Enter your roomno"><br>
+                    <label><h5>Checkout_date:</h5></label> <input type="date" name="checkout_date" placeholder="Enter your Checkout_date"><br>
+                    <label><h5>Checkout_time:</h5></label> <input type="time" name="checkout_time" placeholder="Enter your Checkout_time"><br><br>
+                    <input type="submit" value="Submit" class="btn btn-primary"><br><br>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card bg-warning">
+            <div class="card-body">
+                <h2 class="card-title">Checkin status</h2>
+                <div class="alert alert-info">
+                    {{ msg }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+{% include "footer.html" %}

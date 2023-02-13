@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="../static/CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/style.css">
+</head>
+<body>
+
+ <div class="container">
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<center><h1>Login Below</h1></center>
+<div class="row container jumbotron bg-info">
+    <div class="col-md-6">
+       <img src="../static/images/log.jpg" class="img-fluid" width="60%" alt="Hotel image">
+        <h1>Welcome to  our Hotel. <br>Register <br>Now Online</h1>
+
+    </div>
+    <div class="col-md-6">
+        <form action="/login" method="post">
+            <label>Username:</label><input type="text" name="username"><br><br>
+            <label>Password:</label><input type="password" name="password"><br><br>
+            <a href="#" class="text-dark">Forgot Password</a><br><br>
+            <a href="registration"><input type="submit" value="Login" class="btn btn-danger"></a><br><br>
+            <div class="alert alert-danger">
+                {{ msg }}
+            </div>
+        </form>
+    </div>
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+</div>
+
+<script type="text/javascript" src="../static/js/jquery.js"></script>
+<script type="text/javascript" src="../static/js/poper.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.js"></script>
